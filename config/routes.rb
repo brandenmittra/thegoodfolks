@@ -1,4 +1,10 @@
 Thegoodfolks::Application.routes.draw do
+  get "contact_form/new"
+  get "contact_form/create"
+  root "pages#home"  
+
+  resources :contact_forms
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
